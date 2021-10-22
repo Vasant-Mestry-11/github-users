@@ -8,19 +8,19 @@ import {
 import React from "react";
 
 function Profile({ user }) {
-  const { avatar_url } = user;
+  const { avatar_url, name, login, bio } = user;
   return user ? (
     <Container>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, bgcolor: "#2D3142" }}>
         <CardMedia component="img" image={avatar_url} />
-        <CardContent>
+        <CardContent sx={{ color: "#BFC0C0" }}>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="subtitle1" gutterBottom>
+            - {login}
           </Typography>
+          <Typography variant="caption">{bio}</Typography>
         </CardContent>
       </Card>
     </Container>

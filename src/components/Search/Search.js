@@ -38,7 +38,6 @@ class Search extends Component {
           <Input
             sx={{
               width: "30%",
-              color: "black",
             }}
             placeholder="Search User"
             value={value}
@@ -46,7 +45,7 @@ class Search extends Component {
             color="warning"
           />
           <Button
-            variant="outlined"
+            variant="contained"
             color="warning"
             sx={{
               ml: 3,

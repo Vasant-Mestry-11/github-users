@@ -1,5 +1,7 @@
 import {
+  Button,
   Card,
+  CardActions,
   CardContent,
   CardMedia,
   Container,
@@ -11,17 +13,24 @@ function Profile({ user }) {
   const { avatar_url, name, login, bio } = user;
   return user ? (
     <Container>
-      <Card sx={{ maxWidth: 345, bgcolor: "#2D3142" }}>
+      <Card sx={{ maxWidth: 345, bgcolor: "#eaeef3" }}>
         <CardMedia component="img" image={avatar_url} />
-        <CardContent sx={{ color: "#BFC0C0" }}>
+        <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {name}
           </Typography>
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography variant="subtitle1" gutterBottom color="text.secondary">
             - {login}
           </Typography>
-          <Typography variant="caption">{bio}</Typography>
+          <Typography variant="caption" color="text.secondary">
+            {bio}
+          </Typography>
         </CardContent>
+        <CardActions>
+          <Button variant="outlined" fullWidth size="small" color="error">
+            Share
+          </Button>
+        </CardActions>
       </Card>
     </Container>
   ) : null;

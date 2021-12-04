@@ -53,7 +53,7 @@ class Search extends Component {
             onClick={this.handleClick}
             disabled={!value}
           >
-            Get User From Github
+            Get User
           </Button>
         </Box>
       </>

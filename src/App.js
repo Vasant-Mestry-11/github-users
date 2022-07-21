@@ -8,15 +8,11 @@ function App() {
   const [user, setUser] = React.useState("");
   const theme = createTheme();
 
-  React.useEffect(() => {
-    console.log(user);
-  }, [user]);
-
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
         <>
-          <Search setUser={setUser} />
+          <Search userName={user?.login} setUser={setUser} />
           <Profile user={user} />
         </>
       </ThemeProvider>

@@ -12,7 +12,11 @@ import React from "react";
 function Profile({ user }) {
   const { avatar_url, name, login, bio } = user;
   return user ? (
-    <Container>
+    <Container sx={{ 
+      display: 'flex',
+      justifyContent: 'center',
+      mt:5
+    }}>
       <Card sx={{ maxWidth: 345, bgcolor: "#eaeef3" }}>
         <CardMedia component="img" image={avatar_url} />
         <CardContent>

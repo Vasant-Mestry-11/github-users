@@ -1,8 +1,10 @@
 # Github Users
 
-## _The Last Markdown Editor, Ever_
-
 The Github Users API allows to get public information about the user
+
+## Demo
+
+[View Demo]
 
 ## Features
 
@@ -32,3 +34,6 @@ API's used to create this application
 | ------------- | ------------------------------------------------------------------------ |
 | Get User      | https://docs.github.com/en/rest/users/users#get-a-user                   |
 | Get Followers | https://docs.github.com/en/rest/users/followers#list-followers-of-a-user |
+
+
+[View Demo]: https://vasant-mestry-11.github.io/github-users/

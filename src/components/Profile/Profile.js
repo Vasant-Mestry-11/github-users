@@ -22,7 +22,7 @@ function Profile({ user }) {
       <Card
         sx={{
           width: "345px",
-          height: "600px",
+          maxHeight: "600px",
           bgcolor: "#eaeef3",
           display: "flex",
           flexDirection: "column",

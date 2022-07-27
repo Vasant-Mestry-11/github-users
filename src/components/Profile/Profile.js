@@ -12,12 +12,23 @@ import React from "react";
 function Profile({ user }) {
   const { avatar_url, name, login, bio } = user;
   return user ? (
-    <Container sx={{ 
-      display: 'flex',
-      justifyContent: 'center',
-      mt:5
-    }}>
-      <Card sx={{ maxWidth: 345, bgcolor: "#eaeef3" }}>
+    <Container
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        mt: 5,
+      }}
+    >
+      <Card
+        sx={{
+          width: "345px",
+          height: "600px",
+          bgcolor: "#eaeef3",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
         <CardMedia component="img" image={avatar_url} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
